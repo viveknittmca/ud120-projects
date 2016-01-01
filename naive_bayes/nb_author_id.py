@@ -29,7 +29,7 @@ features_train, features_test, labels_train, labels_test = preprocess()
 clf = GaussianNB()
 clf.fit(features_train, labels_train)
 prediction = clf.predict(features_test)
-print "Accuracy %f "  accuracy_score(labels_test, prediction)
+print "Accuracy %f " % accuracy_score(labels_test, prediction)
 
 #########################################################
 
